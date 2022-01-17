@@ -58,11 +58,14 @@ In the _factories_ package you can find *ChildrenFactory* and
 *ElfFactory*.
 
    The 4 children types:
+   
       * Baby: < 5y
       * Kid: 5 - 12y
       * Teen: 12 - 18y
       * Young Adult: > 18y
+      
    The 4 elves types:
+   
      * Black
         * Decreases the assigned budget by 30%
      * Pink
