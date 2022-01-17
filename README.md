@@ -107,10 +107,10 @@ The _Santa_ package does 4 main things:
 
     * YELLOW - gives a child (that haven't received a gift yet) a gift:
     
-      	1. chooses the cheapest gift from the preference list
+      	`1. chooses the cheapest gift from the preference list`
 	
-      	2. if there are no gift in teh preference list or if the quantity of the cheapest
-      	gift = 0  then this child won't receive a gift
+      	`2. if there are no gift in teh preference list or if the quantity of the cheapest
+      	gift = 0  then this child won't receive a gift`
 
     * BLACK - decreseas the assignedBudget with 30%
   
