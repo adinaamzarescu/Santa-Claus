@@ -67,14 +67,14 @@ In the _factories_ package you can find *ChildrenFactory* and
    The 4 elves types:
    
      * Black
-        * Decreases the assigned budget by 30%
+        Decreases the assigned budget by 30%
      * Pink
-        * Increases the assigned budget by 30%
+        Increases the assigned budget by 30%
      * Yellow
-        * Assigns a gift to a child that hasn't
+        Assigns a gift to a child that hasn't
         received one yet
      * White
-        * Does not affect the program
+        Does not affect the program
         
 This factories are both Singleton and creates the 4 children and
 elves types.
