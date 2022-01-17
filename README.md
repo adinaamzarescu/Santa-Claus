@@ -80,7 +80,7 @@ This factories are both Singleton and creates the 4 children and
 elves types.
 _____________________________________________________________________
 
-The _Santa_ package does 2 main things:
+The _Santa_ package does 4 main things:
 
 * calculateScore
    
