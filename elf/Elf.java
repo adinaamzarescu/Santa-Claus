@@ -12,9 +12,6 @@ import java.util.List;
 @Getter
 public abstract class Elf {
 
-    /**
-     * Constructor
-     */
     public Elf() {
     }
 
