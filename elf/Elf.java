@@ -3,19 +3,26 @@ package elf;
 import entities.children.ChildBase;
 import entities.gift.Gift;
 import enums.ElvesType;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.util.List;
 
-@Setter
-@Getter
 public abstract class Elf {
 
+    /**
+     * Constructor
+     */
     public Elf() {
     }
 
     private ElvesType type;
+
+    public final void setType(final ElvesType type) {
+        this.type = type;
+    }
+
+//    public ElvesType getType() {
+//        return type;
+//    }
 
     /**
      * Modify Budget
