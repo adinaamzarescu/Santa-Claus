@@ -1,15 +1,35 @@
 package fileio.output;
 
 import entities.gift.Gift;
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter
-@Setter
-public class GiftOutputData {
+public final class GiftOutputData {
     private String productName;
     private Double price;
     private String category;
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(final String productName) {
+        this.productName = productName;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(final Double price) {
+        this.price = price;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(final String category) {
+        this.category = category;
+    }
 
     /**
      * Constructor
