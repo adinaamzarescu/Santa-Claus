@@ -11,8 +11,6 @@ import fileio.input.ChildrenInputData;
 import fileio.input.GiftInputData;
 import fileio.input.InputData;
 import fileio.output.ChildList;
-import lombok.Getter;
-import lombok.Setter;
 import santa.Santa;
 
 import java.util.List;
@@ -21,8 +19,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 
-@Getter
-@Setter
 public final class Simulation {
     private InputData inputData;
     private ChildrenFactory factory;
@@ -31,6 +27,14 @@ public final class Simulation {
     private List<Gift> giftList;
     private List<AnnualChangesInputData> annualChanges;
     private List<ChildBase> childrenList = new ArrayList<>();
+
+    public List<AnnualChangesInputData> getAnnualChanges() {
+        return annualChanges;
+    }
+
+    public void setAnnualChanges(final List<AnnualChangesInputData> annualChanges) {
+        this.annualChanges = annualChanges;
+    }
 
     /**
      * Constructor
@@ -79,9 +83,7 @@ public final class Simulation {
      * @return Child list
      */
     public List<ChildBase> firstRound() {
-        /**
-         * Removing young adults
-         */
+        //        Removing young adults
         childrenList.removeIf(child -> child.getAge() > Constants.EIGHTEEN);
         Santa.calculateScore(childrenList, inputData.getSantaBudget());
         sortChildrenOnStrategy(CityStrategyEnum.ID.getValue());
@@ -169,22 +171,16 @@ public final class Simulation {
     }
 
     private void addNewChildren(final List<ChildrenInputData> newChildren) {
-        /**
-         * Adding the new children in the list
-         */
+        // Adding the new children in the list
         for (ChildrenInputData newChild : newChildren) {
             childrenList.add(factory.createChildren(newChild));
         }
-        /**
-         * Removing young adults
-         */
+        // Removing young adults
         childrenList.removeIf(child -> child.getAge() > Constants.EIGHTEEN);
     }
 
     private void prepareChildrenForNextRound() {
-        /**
-         * For each child the age will be modified by 1
-         */
+        // For each child the age will be modified by 1
         childrenList.forEach(child -> child.setAge(child.getAge() + 1));
         childrenList.forEach(children -> children.setReceivedGifts(new ArrayList<>()));
     }

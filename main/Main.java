@@ -22,9 +22,7 @@ import java.util.Objects;
 public final class Main {
 
     private Main() {
-        /**
-         * Constructor
-         */
+        // Constructor
     }
     /**
      * This method is used to call the checker which calculates the score
