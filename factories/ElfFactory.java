@@ -1,9 +1,9 @@
 package factories;
 
-import elf.elfTypes.BlackElf;
-import elf.elfTypes.YellowElf;
-import elf.elfTypes.WhiteElf;
-import elf.elfTypes.PinkElf;
+import elf.elfType.BlackElf;
+import elf.elfType.YellowElf;
+import elf.elfType.WhiteElf;
+import elf.elfType.PinkElf;
 import elf.Elf;
 import enums.ElvesType;
 

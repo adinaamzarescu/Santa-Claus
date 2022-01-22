@@ -5,7 +5,6 @@ import fileio.input.ChildrenInputData;
 
 import java.util.ArrayList;
 
-
 public final class ChildrenFactory {
     private static ChildrenFactory instance = null;
 
@@ -13,7 +12,7 @@ public final class ChildrenFactory {
     }
 
     /**
-     * Make singleton instance for factory
+     * Make singleton instance for entities.children factory
      *
      * @return instance
      */
@@ -25,15 +24,13 @@ public final class ChildrenFactory {
     }
 
     /**
-     * Method to create Children Objects
-     *
+     * Create Children
      * @param child input child
      * @return child object
      */
     public ChildBase createChildren(final ChildrenInputData child) {
         ElfFactory elfFactory = ElfFactory.getInstance();
-
-        ChildBase ch = ChildBase.builder().id(child.getId()).firstName(child.getFirstName()).
+        ChildBase ch = new ChildBase.Builder().id(child.getId()).firstName(child.getFirstName()).
                 lastName(child.getLastName()).age(child.getAge()).
                 city(child.getCity()).niceScore(child.getNiceScore()).
                 niceScoreBonus(child.getNiceScoreBonus()).
