@@ -1,19 +1,44 @@
 package entities.gift;
 
 import fileio.input.GiftInputData;
-import lombok.Getter;
-import lombok.Setter;
 
-@Setter
-@Getter
-/**
- * Class used for gifts
- */
-public class Gift {
+public final class Gift {
     private String productName;
     private Double price;
     private String category;
     private Integer quantity;
+
+    public void setQuantity(final Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public void setProductName(final String productName) {
+        this.productName = productName;
+    }
+
+    public void setPrice(final Double price) {
+        this.price = price;
+    }
+
+    public void setCategory(final String category) {
+        this.category = category;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public String getCategory() {
+        return category;
+    }
 
     /**
      * Constructor
