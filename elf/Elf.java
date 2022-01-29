@@ -20,10 +20,6 @@ public abstract class Elf {
         this.type = type;
     }
 
-//    public ElvesType getType() {
-//        return type;
-//    }
-
     /**
      * Modify Budget
      * @param child Child Object
