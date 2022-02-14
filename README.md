@@ -1,8 +1,6 @@
 # Santa Claus is coming to ACS students
 ## Copyright 2022 Adina-Maria Amzarescu
 
-Link GitHub: https://github.com/adinaamzarescu/Santa-Claus
-
 Objectives: 
 * Learning design patterns
 * Writing generic code that can be changed afterwards
